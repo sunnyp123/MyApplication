@@ -8,6 +8,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 Button btn;
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,4 +26,5 @@ Button btn;
         }
     });
     }
+
 }
